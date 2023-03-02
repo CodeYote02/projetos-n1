@@ -4,9 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario</title>
+    <style>
+        form {
+            
+            margin: 0 auto;
+            width: 70%;
+            
+            padding: 1em;
+            border: 1px solid #CCC;
+            border-radius: 1em;
+        }
+        #survey-form {
+            background-color: white;
+        }
+        div{
+            margin: 10px;
+        }
+        body {
+            font-size:x-large;
+            text-align: center;
+            background-color: #a9d7e9;
+        }
+        fieldset { 
+            border:1px solid lightgray;
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
+<form id="survey-form" action="/my-handling-form-page" method="post">
+    <h1>Dados Pessoal</h1>
+    <div>
+        <label id="nome-label" for="nome">Nome:</label>
+        <input type="text" required id="nome" name="usuario" placeholder="Digite seu nome"> 
+    </div>
+    <div>
+        <label id="idade-label" for="idade">Idade:</label>
+        <input type="text" required id="idade" name="idade-usuario" placeholder="Digite sua idade">  
+    </div>
+    <div>
+        <label id="email-label" for="email">Email:</label>
+        <input type="text" required id="email" name="email-usuario" placeholder="Digite seu email">  
+    </div>
+    <div>
+        <label id="telefone-label" for="telefone">Telefone:</label>
+        <input type="text" required id="telefone" name="telefone-usuario" placeholder="Digite seu telefone">  
+    </div>
+    <div>
+        <label id="endereco-label" for="endereco">Endereço:</label>
+        <input type="text" required id="endereco" name="endereco-usuario" placeholder="Digite seu endereço">  
+    </div>
+    <div>
+        <label id="nacionalidade-label" for="nacionalidade">Nacionalidade:</label>
+        <input type="text" required id="nacionalidade" name="nacionalidade-usuario" placeholder="Digite sua nacionalidade">  
+    </div>
+    <div>
+        <label id="estado-label" for="estado">Estado:</label>
+        <input type="text" required id="estado" name="estado-usuario" placeholder="Digite seu estado">  
+    </div>
+    <div>
+        <label id="cidade-label" for="cidade">Cidade:</label>
+        <input type="text" required id="cidade" name="cidade-usuario" placeholder="Digite sua cidade">  
+    </div>
     
+      <fieldset>
+        <div>
+          <label for="Genero">Genero:</label>
+          <select id="dropdown">
+      <option value="homem">Homem</option>
+      <option value="mulher">Mulher</option>
+      <option value="outro">Outro</option>
+      </select>
+    
+          <label for="politics">Escolaridade:</label>
+          <select id="dropdown2">
+      <option value="superior">Ensino superior</option>
+      <option value="fundamental">Ensino fundamental</option>
+      <option value="medio">Ensino medio</option>  
+      <option value="nenhum">Nenhum</option>
+      </select>
+        </div>
+      </fieldset>
+    </form>
 </body>
 </html>
