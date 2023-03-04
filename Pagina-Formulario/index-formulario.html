@@ -3,38 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="style.css" type="text/css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
-    <style>
-        form {
-            
-            margin: 0 auto;
-            width: 70%;
-            
-            padding: 1em;
-            border: 1px solid #CCC;
-            border-radius: 1em;
-        }
-        #survey-form {
-            background-color: white;
-        }
-        div{
-            margin: 10px;
-        }
-        body {
-            font-size:x-large;
-            text-align: center;
-            background-color: #a9d7e9;
-        }
-        fieldset { 
-            border:1px solid lightgray;
-            margin: 10px;
-        }
-    </style>
+    
 </head>
 <body>
+    <h1>Formulário</h1>
 <form id="survey-form" action="/my-handling-form-page" method="post">
-    <h1>Dados Pessoal</h1>
+    <fieldset>
+    <legend>Dados Pessoais</legend>
     <div>
         <label id="nome-label" for="nome">Nome:</label>
         <input type="text" required id="nome" name="usuario" placeholder="Digite seu nome"> 
@@ -67,7 +45,11 @@
         <label id="cidade-label" for="cidade">Cidade:</label>
         <input type="text" required id="cidade" name="cidade-usuario" placeholder="Digite sua cidade">  
     </div>
-    
+    <div>
+        <label id="profissao-label" for="profissao">Profissão:</label>
+        <input type="text" required id="profissao" name="profissao-usuario" placeholder="Digite sua profissão">  
+    </div>
+    </fieldset>
       <fieldset>
         <div>
           <label for="Genero">Genero:</label>
@@ -85,7 +67,17 @@
       <option value="nenhum">Nenhum</option>
       </select>
         </div>
+       
       </fieldset>
+      
+
+
+
+
+
+
+
+      <p>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>aaaaaaaaaaaaaaaaaaaaaaaa</p>
     </form>
 </body>
 </html>
