@@ -5,6 +5,8 @@
   }
   
   body{
+    height: 1000px;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     margin:10px;
   }
   
@@ -20,6 +22,7 @@
   /* content que contem os formulários */
   .content{
     width: 500px;
+    height: 500px;
     margin: 0px auto;
     position: relative;	
   }
@@ -83,6 +86,7 @@
     width: 100%!important;
     cursor: pointer;	
     background: #8d5bdd;
+    
     padding: 8px 5px;
     color: #fff;
     font-size: 20px;	
@@ -91,7 +95,7 @@
     text-shadow: 0 1px 1px #333;
     
     -webkit-border-radius: 5px;
-    border-radius: 5px;
+    border-radius: 41px;
     
     transition: all 0.2s linear;
   }
@@ -113,7 +117,7 @@
     border-top: 1px solid black;
   
     -webkit-border-radius: 0 0  5px 5px;
-    border-radius: 0 0  5px 5px;
+    border-radius: 0 0  41px 41px;
   }
   .link a {
     font-weight: bold;
@@ -124,7 +128,7 @@
     border: 1px solid black;
   
     -webkit-border-radius: 4px;
-    border-radius: 4px;  
+    border-radius: 41px;  
   
     -webkit-transition: all 0.4s linear;
     transition: all 0.4s  linear;
@@ -138,39 +142,17 @@
   /* estilos para para ambos os formulários */
   #login, #cadastro{
     position: absolute;
-    top: 0px;
+    top: 50%;
     width: 88%;	
     padding: 18px 6% 60px 6%;
     margin: 0 0 35px 0;
     background: rgb(247, 247, 247);
-    background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
-    border: 1px solid black;
-    
+    background-color: rgba(88, 130, 193, 0.28);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(12.5px);
+    border: 1px groove black;
     -webkit-box-shadow: 5px;
-    border-radius: 5px;
-    
-    -webkit-animation-duration: 0.5s;
-    -webkit-animation-timing-function: ease;
-    -webkit-animation-fill-mode: both;
-  
-    animation-duration: 0.5s;
-    animation-timing-function: ease;
-    animation-fill-mode: both;
-  }
-  
-  #paracadastro:target ~ .content #cadastro,
-  #paralogin:target ~ .content #login{
-    z-index: 2;
-    -webkit-animation-name: fadeInLeft;
-    animation-name: fadeInLeft;
-  
-    -webkit-animation-delay: .1s;
-    animation-delay: .1s;
-  }
-  #registro:target ~ .content #login,
-  #paralogin:target ~ .content #cadastro{
-    -webkit-animation-name: fadeOutLeft;
-    animation-name: fadeOutLeft;
+    border-radius: 41px;
   }
   
   /*fadeInLeft*/
