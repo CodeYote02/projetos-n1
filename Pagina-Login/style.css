@@ -18,6 +18,11 @@
   a.links{
     display: none;
   }
+  .tab-group {
+    list-style:none;
+    padding:0;
+    margin: 0 40px 0 0;
+    }
   
   /* content que contem os formulários */
   .content{
@@ -31,11 +36,12 @@
   h1{
     font-size: 48px;
     color: black;
-    padding: 10px 0;
+    padding: 30px 0;
     font-family: Arial,sans-serif;
     font-weight: bold;
     text-align: center;
     padding-bottom: 30px;
+    
   }
  
   
@@ -92,10 +98,10 @@
     font-size: 20px;	
     border: 1px solid black;	
     margin-bottom: 10px;	
-    text-shadow: 0 1px 1px #333;
+    text-shadow: 0 5px 5px #333;
     
     -webkit-border-radius: 5px;
-    border-radius: 41px;
+    border-radius: 5px;
     
     transition: all 0.2s linear;
   }
@@ -106,7 +112,22 @@
   /*marcando os links para mudar de um formulário para outro */
   .link{
     position: absolute;
-    background: white;
+    /*background: white;*/
+    color: #7f7c7c;
+    left: 0px;
+    height: 20px;
+    width: 440px;
+    padding: 17px 30px 20px 30px;
+    font-size: 16px;
+    text-align: left;
+    /*border-top: 1px solid black;*/
+  
+    -webkit-border-radius: 0 0  5px 5px;
+    border-radius: 0 0  5px 5px;
+  }
+  .link2{
+    position: absolute;
+    /*background: white;*/
     color: #7f7c7c;
     left: 0px;
     height: 20px;
@@ -114,12 +135,39 @@
     padding: 17px 30px 20px 30px;
     font-size: 16px;
     text-align: right;
-    border-top: 1px solid black;
+    /*border-top: 1px solid black;*/
   
     -webkit-border-radius: 0 0  5px 5px;
-    border-radius: 0 0  41px 41px;
+    border-radius: 0 0  5px 5px;
   }
   .link a {
+    display:block;
+    text-decoration:none;
+    padding:15px;
+    font-size:20px;
+    float:left;
+    width:50%;
+    text-align:center;
+    cursor:pointer;
+    transition:.5s ease;
+
+    font-weight: bold;
+    background: #8d5bdd;
+    padding: 15px;
+    color: white;
+    margin-left: 10px;
+    border: 1px solid black;
+
+    width:50%;
+    text-align:center;
+  
+    -webkit-border-radius: 4px;
+    border-radius: 5px;  
+  
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s  linear;
+  }
+  .link2 a {
     font-weight: bold;
     background: #8d5bdd;
     padding: 6px;
@@ -128,7 +176,7 @@
     border: 1px solid black;
   
     -webkit-border-radius: 4px;
-    border-radius: 41px;  
+    border-radius: 5px;  
   
     -webkit-transition: all 0.4s linear;
     transition: all 0.4s  linear;
@@ -152,7 +200,7 @@
     backdrop-filter: blur(12.5px);
     border: 1px groove black;
     -webkit-box-shadow: 5px;
-    border-radius: 41px;
+    border-radius: 5px;
   }
   
   /*fadeInLeft*/
