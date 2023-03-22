@@ -6,8 +6,8 @@
   
   body{
     height: 1000px;
-    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    margin:10px;
+    background-image: url("https://wallpaperaccess.com/full/1216414.jpg");
+
   }
   
   a{
@@ -35,14 +35,25 @@
   /* formatando o cabeçalho dos formulários */
   h1{
     font-size: 48px;
-    color: black;
+    color: #151d3f;
     padding: 30px 0;
     font-family: Arial,sans-serif;
     font-weight: bold;
     text-align: center;
     padding-bottom: 30px;
-    
+    margin-top: 15%;
   }
+h2{
+  color: #151d3f;
+	font-size: 80px;
+  padding-top: 15%;
+	padding-left: 5%;
+	margin: 8%;
+	font-family: 'Lucida Sans Unicode';
+  text-align: right;
+}
+
+  
  
   
   p{
@@ -59,15 +70,16 @@
   /**** advanced input styling ****/
   /* placeholder */
   ::-webkit-input-placeholder  {
-    color: #bebcbc; 
+    color: black; 
     font-style: italic;
   }
   input:-moz-placeholder,
   textarea:-moz-placeholder{
-    color: #bebcbc;
+    color: black;
     font-style: italic;
   } 
   input {
+    background-color: rgba(88, 130, 193, 0.28);;
     outline: none;
   }
   
@@ -89,19 +101,21 @@
   
   /*estilo do botão submit */
   input[type="submit"]{
+    height: 60px;
     width: 100%!important;
     cursor: pointer;	
-    background: #8d5bdd;
+    background: #8981df;
+    font-weight: bold;
     
     padding: 8px 5px;
-    color: #fff;
+    color: #151d3f;
     font-size: 20px;	
     border: 1px solid black;	
-    margin-bottom: 10px;	
+    margin-bottom: 0px;	
     text-shadow: 0 5px 5px #333;
     
     -webkit-border-radius: 5px;
-    border-radius: 5px;
+    border-radius: 0px;
     
     transition: all 0.2s linear;
   }
@@ -146,42 +160,55 @@
     padding:15px;
     font-size:20px;
     float:left;
-    width:50%;
-    text-align:center;
+    width: 40%;
     cursor:pointer;
     transition:.5s ease;
 
     font-weight: bold;
-    background: #8d5bdd;
+    background: #8981df;
     padding: 15px;
-    color: white;
-    margin-left: 10px;
+    color: #151d3f;
+    margin-left: 3%;
     border: 1px solid black;
 
-    width:50%;
     text-align:center;
   
-    -webkit-border-radius: 4px;
-    border-radius: 5px;  
+    border-radius: 0px;  
   
     -webkit-transition: all 0.4s linear;
     transition: all 0.4s  linear;
   }
   .link2 a {
+    display:block;
+    text-decoration:none;
+    padding:15px;
+    font-size:20px;
+    float:right;
+    width: 40%;
+    cursor:pointer;
+    transition:.5s ease;
+
     font-weight: bold;
-    background: #8d5bdd;
-    padding: 6px;
-    color: white;
-    margin-left: 10px;
+    background: #8981df;
+    padding: 15px;
+    color: #151d3f;
+    margin-right: 3%;
     border: 1px solid black;
+
+    
+    text-align:center;
   
-    -webkit-border-radius: 4px;
-    border-radius: 5px;  
+    border-radius: 0px;  
   
     -webkit-transition: all 0.4s linear;
     transition: all 0.4s  linear;
   }
   .link a:hover {
+    color: white;
+    background: #b5aee4;
+    border: 1px solid black;
+  }
+  .link2 a:hover {
     color: white;
     background: #f7f7f7;
     border: 1px solid black;
@@ -193,7 +220,7 @@
     top: 50%;
     width: 88%;	
     padding: 18px 6% 60px 6%;
-    margin: 0 0 35px 0;
+    margin: 0 0 0px 0;
     background: rgb(247, 247, 247);
     background-color: rgba(88, 130, 193, 0.28);
     mix-blend-mode: normal;
@@ -247,4 +274,21 @@
       opacity: 0;
       transform: translateX(-20px);
     }
+  }
+
+  
+.blink {
+	animation: blink 1s steps(1, end) infinite;
+  }
+  
+  @keyframes blink {
+	0% {
+	  opacity: 1;
+	}
+	50% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
   }
