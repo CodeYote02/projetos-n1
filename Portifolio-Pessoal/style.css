@@ -159,9 +159,18 @@
   }
 
   .integrantes {
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100vh;
     background: var(--main-blue);
+  }
+  .integra {
+    width: 50%;
+    text-align: right;
   }
 
   .welcome-section > p {
@@ -314,6 +323,7 @@
   /* Footer */
   
   footer {
+    text-align: justify;
     font-weight: 300;
     display: flex;
     justify-content: space-evenly;
