@@ -11,23 +11,48 @@ form {
     border-radius: 1em;
 }
 #survey-form {
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.253);
 }
 div{
     margin: 10px;
 }
 body {
+    min-height: 100%;
     font-size:x-large;
     text-align: center;
-    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-image: url("https://images2.alphacoders.com/796/thumb-1920-796747.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
 fieldset { 
     border:1px solid lightgray;
     margin: 10px;
+    border-radius: 15px;
 }
 legend {
     font-weight: 700;
 }
 h1{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+label{
+    color: white;
+}
+legend{
+    color: white;
+}
+.label{
+    text-align: right;
+    width: 35%;
+}
+.input{
+
+}
+input{
+    width: 100%;
+}
+.flex{
+    display: flex;
 }

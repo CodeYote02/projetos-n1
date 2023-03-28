@@ -168,9 +168,20 @@
     height: 100vh;
     background: var(--main-blue);
   }
+  .flex{
+    display: flex;
+  }
   .integra {
+    padding-right: 0;
     width: 50%;
-    text-align: right;
+    align-items: left;
+    text-align: left;
+  }
+  .integra2 {
+    padding-right: 0;
+    width: 50%;
+    align-items: left;
+    text-align: center;
   }
 
   .welcome-section > p {
@@ -250,7 +261,7 @@
   .btn {
     display: inline-block;
     padding: 1rem 2rem;
-    border-radius: 2px;
+    border-radius: 15px 15px  15px 15px;
   }
   
   .btn-show-all {
