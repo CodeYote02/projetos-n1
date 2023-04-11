@@ -31,26 +31,51 @@ a {
     text-decoration: none;
     color: black;
   }
+  .div-nav{
+    display:block;
+  }
 
-.nav {
+#nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: left;
     position: fixed;
     top: 0;
     left: 0;
     
     height: 75px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.28);
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    background-color: rgb(255, 255, 255);
+    z-index: 10;
+    border: none;
+  }
+  #nav2{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 75px;
+    left: 0;
+    
+    height: 75px;
+    width: 100%;
+    background-color: rgb(255, 0, 0);
     z-index: 10;
     border: none;
   }
   
   .nav-list {
     display: flex;
+    justify-self: flex-end;
     margin-right: 1rem;
     list-style: none;
+    align-items: center;
+
+  }
+  
+  .nav-list2 {
+    display: flex;
+    margin-right: 1rem;
+    list-style: none;
+    align-items: center;
 
   }
   
@@ -65,6 +90,7 @@ a {
   }
   
   .nav-list a {
+    color: #000000;
     display: block;
     font-size: 1.5rem;
     padding: 1rem;
@@ -72,6 +98,35 @@ a {
   
   .nav-list a:hover {
     background: yellow;
+    list-style: none;
+  }
+
+  #logo{
+    height: 75px;
+    width: 300px;
+  }
+
+  #divBusca{
+    background-color:transparent;
+    border:solid 1px;
+    border-radius:15px;
+    width:300px;
+  }
+  
+  #txtBusca{
+    float:right;
+    background-color:transparent;
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    border-radius:15px;
+    height:32px;
+    width:260px;
+  }
+  #divNav{
+    justify-content: flex-end;
+
   }
   
   .welcome-section {
