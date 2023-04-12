@@ -71,14 +71,6 @@ a {
 
   }
   
-  .nav-list2 {
-    display: flex;
-    margin-right: 1rem;
-    list-style: none;
-    align-items: center;
-
-  }
-  
   @media (max-width: 28.75em) {
     .nav {
       justify-content: center;
@@ -97,8 +89,7 @@ a {
   }
   
   .nav-list a:hover {
-    background: yellow;
-    list-style: none;
+    background: none;
   }
 
   #logo{
@@ -127,6 +118,13 @@ a {
   #divNav{
     justify-content: flex-end;
 
+  }
+  #login{
+    right: 0;
+    justify-self: flex-end;
+  }
+  #nav2{
+    align-self: center;
   }
   
   .welcome-section {
