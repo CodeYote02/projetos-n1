@@ -170,6 +170,7 @@
   }
   .flex{
     display: flex;
+    align-items: center;
   }
   .integra {
     padding-right: 0;
@@ -357,4 +358,11 @@
       text-align: center;
     }
   }
-  
+    .equipe{
+      align-items: center;
+      width: 80%;
+    }
+    .descricaoEquipe{
+      text-align: center;
+      width: 10 0%;
+    }
