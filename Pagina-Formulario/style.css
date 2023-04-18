@@ -10,6 +10,10 @@ form {
     border: 1px solid #CCC;
     border-radius: 1em;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 #survey-form {
     background-color: rgba(0, 0, 0, 0.253);
 }
@@ -47,11 +51,12 @@ legend{
     text-align: right;
     width: 35%;
 }
-.input{
 
-}
 input{
     width: 100%;
+}
+input[type="submit"]{
+    width: 50%;
 }
 .flex{
     display: flex;

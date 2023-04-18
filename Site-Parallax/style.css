@@ -111,6 +111,9 @@ section {
 	opacity: 0.5;
 	text-decoration: none;
 }
+a{
+	text-decoration: none;
+}
 
 a:link {
 	color: white;
