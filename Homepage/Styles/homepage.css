@@ -1,14 +1,15 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: monospace;
+    font-family: 'Nunito', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .cabecalho{
     width: 100%;
     position: fixed;
     padding: 10px;
-    background-color: black;
+    background-color: #3e3e3e;
 }
 .cabecalho-logo{
     float: left;
@@ -19,13 +20,13 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: black;
+    background-color: #3e3e3e;
 }
 .cabecalho-menu > a{
     float: right;
 }
 .cabecalho-menu > a{
-    margin-right: 10px;
+    margin-right: 20px;
     font-size: 20px;
     display: block;
     color: #ffff;
@@ -34,7 +35,8 @@
     text-decoration: none;
 }
 .cabecalho-menu > a:hover{
-    background-color: #333333;
+    background-color: #ffff;
+    color: #000;
 }
 
 .conteudo{
@@ -48,10 +50,10 @@
     align-items: center;
 }
 .conteudo-titulo > div > h1{
-    font-size: 65px;
+    font-size: 75px;
 }
 .conteudo-titulo > div > p{
-    font-size: 35px;
+    font-size: 45px;
     text-align: center;
 }
 
@@ -159,7 +161,7 @@
 .rodape{
     width: 100%;
     padding: 10px;
-    background-color: black;
+    background-color: #3e3e3e;
     color: #ffff;
 }
 .rodape > header{
