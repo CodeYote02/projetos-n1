@@ -60,6 +60,7 @@
                     </li>
                     <li><a href="#industriais">Industriais</a></li>
                     <li><a href="#residencial">Residencial</a></li>
+                    <li style="width: 50px;"></li>
                 </ul>
             </nav>
         </div>
@@ -329,26 +330,38 @@
     <section id="produtos" class="produtos">
 
         <div class="menu-lateral">
-            <h2>Produtos</h2>
-            <ul>
-                <hr>
-                <li>Equipamentos</li>
-                <hr>
-                <li>Componentes</li>
-                <hr>
-                <li>Industriais</li>
-                <hr>
-                <li>Residencial</li>
-            </ul>
-        </div>
-
+            <div class="sub-menu-lateral">
+              <h2>Equipamentos</h2>
+              <ul>
+                  <hr>
+                  <li>Equipamento1</li>
+                  <hr>
+                  <li>Equipamento2</li>
+                  <hr>
+                  <li>Equipamento3</li>
+                  <hr>
+                  <li>Equipamento4</li>
+              </ul>
+            </div>
+            
+            <div class="sub-menu-lateral">
+              <h2>Equipamentos</h2>
+              <hr>
+              <h2>Componentes</h2>
+              <hr>
+              <h2>Indutriais</h2>
+              <hr>
+              <h2>Residencial</h2> 
+            </div>
+          </div>
+  
         <div class="container">
 
             <h2>Equipamentos</h2>
             <div id="equipamentos" class="row">
 
                 <!-- Aqui começa o produto -->
-                <div class="col-md-3">
+                <div class="produto">
                     <div class="produto-top">
                         <img src="imagens/chave-digital-medir-corrente-eletrica-uso-profissional-D_NQ_NP_420115-MLB25202899917_122016-F.jpg">
                         <div class="overlay">
@@ -376,7 +389,7 @@
                 </div>
                 <!-- E aqui termina -->
                 <!-- Aqui começa o produto -->
-                <div class="col-md-3 ">
+                <div class="produto">
                     <div class="produto-top ">
                         <img src="imagens/MULTIMETRO-UNIT-33C-1.png ">
                         <div class="overlay ">
@@ -404,7 +417,7 @@
                 </div>
                 <!-- E aqui termina -->
                 <!-- Aqui começa o produto -->
-                <div class="col-md-3 ">
+                <div class="produto">
                     <div class="produto-top ">
                         <img src="imagens/kit-eletricista-9-itens-com-multimetro-maleta-alicates-top-D_NQ_NP_999507-MLB26839669506_022018-F.jpg ">
                         <div class="overlay ">
@@ -659,9 +672,13 @@
         <img class="icon" src="imagens/github.png">
     </div>
 
+    <div id="quadrado" onclick="subirPagina()"><p>^</p></div>
+
     <script src="scripts/script.js "></script>
     <script src="scripts/script-carro-compras.js"></script>
     <script src="scripts/script-menu.js"></script>
+    <script src="scripts/script-subirPagina.js"></script>
+
 </body>
 
 </html>
